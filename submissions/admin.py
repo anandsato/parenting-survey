@@ -1,3 +1,10 @@
+
 from django.contrib import admin
 
-# Register your models here.
+from .models import Submission
+
+class SubmissionAdmin(admin.ModelAdmin):
+	class Meta:
+		model = Submission
+
+admin.site.register(Submission, SubmissionAdmin)

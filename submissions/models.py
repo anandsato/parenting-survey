@@ -9,4 +9,7 @@ class Submission(models.Model):
 	name = models.CharField(max_length = 255, blank = False, null = False)
 	submitted_data = JSONField()
 
+	def __unicode__(self):
+		return "By: " + self.name
+
 
