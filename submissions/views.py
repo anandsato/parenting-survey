@@ -15,6 +15,7 @@ def profile(request):
 		s = Submission()
 		s.name = data['name']
 		s.submitted_data = json.dumps(data)
+		s.total_score = data['total_score']
 		s.save()
 
 

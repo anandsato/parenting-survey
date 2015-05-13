@@ -38,6 +38,10 @@ body {
 	background: #BABABA;
 }
 
+/*#totalscore {
+	font-size: 25px;
+}*/
+
 </STYLE>
 
 
@@ -66,7 +70,7 @@ body {
 			</div>
 		</div>
 		{% endfor %}
-		<h4><div id="totalscore"></div>%</h4>
+		<h4>Total score: <span id="totalscore">0</span> %</h4>
 		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 
@@ -124,9 +128,14 @@ body {
 		        //     o[this.name] = this.value || '';
 		        // }
 		    });
-			$.post("/", {
+		    var total_score_yeah = $("#totalscore").html();
+			var submit = $.post("/", {
 				'json': o,
 				'name': o["name"],
+				'total_score': total_score_yeah,
+			});
+			submit.promise().done(function(){
+				alert("questionnaire submitted!");
 			});
 		});
 
