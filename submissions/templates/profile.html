@@ -27,12 +27,19 @@
 
 body {
 	background-color: rgba(0,0,0,0.5);
+	background-image: url({% static "img/family.jpg" %});
+	background-repeat: no-repeat;
+	/*background-size: contain;*/
+	background-position: top;  
+	background-attachment:fixed;
+	background-size: 100% auto;
 
 }
 
 .container {
 	margin-top: 70px;
-	background-color: white;
+	background-color: rgba(255,255,255,0.9);
+
 	width: 900px;
 	border-radius: 20px;
 }
@@ -90,7 +97,7 @@ pre {
 	/*margin-left: 25px;*/
     display: inline-block;
     height: 40px;
-    width: 200px;
+    width: 230px;
     line-height: 40px;
 
     -moz-border-radius: 10px; /* or 50% */
@@ -101,7 +108,7 @@ pre {
     color: white;
     text-align: left;
     padding-left: 20px;
-    font-size: 2em;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -164,7 +171,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 					</div>
 				</div>
 				{% endfor %}
-				<div class="scorebox"><h4>Total score: <span id="totalscore">0</span> %</h4></div><br><br>
+				<div class="scorebox">Total score: <span id="totalscore">50</span> %</div><br><br>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
