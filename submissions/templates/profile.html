@@ -137,6 +137,18 @@ h2 {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.thanks {
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+
+}
+
 </STYLE>
 
 
@@ -188,7 +200,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 						<b>Question {{ q.order }}:</b> {{ q.text }}
 						<br><br>
 						<div>
-							<input class="bs-slider" id="ex{{ q.order }}" data-slider-id='ex{{ q.order }}Slider' type="text" data-slider-min="{{ q.min_value }}" data-slider-max="{{ q.max_value }}" data-slider-step="1" data-slider-value="5" name="{{ q.order }}"><span class="numberCircle" id="ex{{ q.order }}SliderVal">5</span>	
+							<input class="bs-slider" id="ex{{ q.order }}" data-slider-id='ex{{ q.order }}Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="5" name="{{ q.order }}"><span class="numberCircle" id="ex{{ q.order }}SliderVal">5</span>	
 							
 							<!-- <span id="ex{{ q.order }}CurrentSliderValLabel"> </span>-->
 						

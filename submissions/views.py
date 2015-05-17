@@ -22,6 +22,12 @@ def profile(request):
 
 	q = Question.objects.all().order_by('order')
 	print len(q)
-	template = "profile.html"
+	template = "base.html"
 	context = { "questions": q} #"form": form, "image_form": image_form
 	return render(request, template, context)
+
+def thank_you(request):
+	template = "thank-you.html"
+	context = {} #"form": form, "image_form": image_form
+	return render(request, template, context)
+
