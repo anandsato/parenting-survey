@@ -77,9 +77,9 @@ pre {
 .numberCircle {
 	margin-left: 25px;
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
     -moz-border-radius: 10px; /* or 50% */
@@ -195,7 +195,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 			<form id="survey" method="post" action="/">
 				{% csrf_token %}
 				    <label for="name">Name</label>
-				    <input class="form-control" id="name" name="name" placeholder="What is your name?" width="100">
+				    <input class="form-control" id="name" name="name" placeholder="What is your name?" width="100" required="true">
 				    <br>
 
 				{% for q in questions %}
