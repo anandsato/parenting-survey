@@ -165,7 +165,7 @@ h2 {
 		</div>
 
 
-
+{% if user.is_superuser %}
 			<div>
 				<pre>
 It’s every human’s right to have children… unfortunately. <br><br>
@@ -218,6 +218,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 				<button type="submit" class="btn btn-default">Submit questionnaire!</button>
 			</form>
 		</div>
+		{% endif %}
 		{% endblock %}
 	  </div>
 
