@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'submissions.views.profile', name='profile'),
     url(r'^thank-you/$', 'submissions.views.thank_you', name='thank_you'),
+    url(r'^results/$', 'submissions.views.results', name='results'),
 )

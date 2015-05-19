@@ -205,7 +205,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 						<b>Question {{ q.order }}:</b> {{ q.text }}
 						<br><br>
 						<div>
-							<input class="bs-slider" id="ex{{ q.order }}" data-slider-id='ex{{ q.order }}Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="5" name="{{ q.order }}"><span class="numberCircle" id="ex{{ q.order }}SliderVal">5</span>	
+							<input class="bs-slider" id="ex{{ q.id }}" data-slider-id='ex{{ q.id }}Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="5" name="{{ q.id }}"><span class="numberCircle" id="ex{{ q.id }}SliderVal">5</span>	
 							
 							<!-- <span id="ex{{ q.order }}CurrentSliderValLabel"> </span>-->
 						
@@ -283,13 +283,18 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 		        // }
 		    });
 		    var total_score_yeah = $("#totalscore").html();
-			var submit = $.post("/", {
-				'json': o,
-				'name': o["name"],
-				'total_score': total_score_yeah,
-			});
+		    var submission_data = {};
+		    submission_data["name"] = o["name"];
+		    submission_data["total_score"] = total_score_yeah;
+		    submission_data["json"] = o;
+		    console.log(JSON.stringify(submission_data));
+
+
+
+			var submit = $.post("/", { "data": JSON.stringify(submission_data)});
 			submit.promise().done(function(){
-				window.location = "/thank-you/";
+				console.log("success!");
+				//window.location = "/thank-you/";
 			});
 		});
 
@@ -307,14 +312,14 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 
 	{% for q in questions %}
 
-		var slider{{ q.order }} = new Slider('#ex{{ q.order }}', {
+		var slider{{ q.id }} = new Slider('#ex{{ q.id }}', {
 			formatter: function(value) {
 				return 'Current value: ' + value;
 			}
 		});
 		// $("#ex{{ q.order }}").slider();
-		$("#ex{{ q.order }}").change(function() {
-			$("#ex{{ q.order }}SliderVal").text(this.value);
+		$("#ex{{ q.id }}").change(function() {
+			$("#ex{{ q.id }}SliderVal").text(this.value);
 		});
 
 	
