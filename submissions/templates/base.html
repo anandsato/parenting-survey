@@ -294,7 +294,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 			var submit = $.post("/", { "data": JSON.stringify(submission_data)});
 			submit.promise().done(function(){
 				console.log("success!");
-				//window.location = "/thank-you/";
+				window.location = "/thank-you/";
 			});
 		});
 
