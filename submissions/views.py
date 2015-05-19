@@ -63,7 +63,7 @@ def results(request):
 		all_results.append(results)
 	print all_results
 	template = "results.html"
-	context = {"results": all_results} #"form": form, "image_form": image_form
+	context = {"results": all_results, "submissions": subs} #"form": form, "image_form": image_form
 	return render(request, template, context)
 
 

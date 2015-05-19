@@ -5,11 +5,32 @@
 
 <div class="thanks">
 
-<h2>Results</h2>
+<h2>Submitted questionnaires ( Total: {{submissions|length}} )</h2>
+<table class="table">
+	<thead>
+		<th>Name:</th>
+		<th>Score:</th>
+	</thead>
+{% for s in submissions %}
+<tr>
+	<td>
+		{{ s.name }}
+	</td>
+	<td>
+		{{ s.total_score }}
+	</td>
+<!-- 	<td>
+		{{ r.2 }}
+	</td> -->
+
+{% endfor %}
+</table>
+
+<h2>Questionnaire averages</h2>
 <table class="table">
 	<thead>
 		<th></th>
-		<th>Question:</th>
+		<th width="200">Question:</th>
 		<th>Average:</th>
 	</thead>
 {% for r in results %}
@@ -25,7 +46,7 @@
 	</td>
 
 {% endfor %}
-</tabe>
+</table>
 </div>
 
 
