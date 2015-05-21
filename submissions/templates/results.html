@@ -4,6 +4,7 @@
 {% block body_block %}
 
 <div class="thanks">
+	{% if user.is_superuser %}
 
 <h2>Submitted questionnaires ( Total: {{submissions|length}} )</h2>
 <table class="table">
@@ -17,7 +18,7 @@
 		{{ s.name }}
 	</td>
 	<td>
-		{{ s.total_score }}
+		{{ s.total_score }}%
 	</td>
 <!-- 	<td>
 		{{ r.2 }}
@@ -48,6 +49,6 @@
 {% endfor %}
 </table>
 </div>
-
+{% endif %}
 
 {% endblock %}

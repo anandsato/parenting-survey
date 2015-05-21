@@ -128,7 +128,7 @@ pre {
 h1 {
 	font-size: 4em;
 	text-align: center;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: sans-serif,"Helvetica Neue",Helvetica,Arial;
 	color: white;
 /*	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 */}
@@ -165,7 +165,7 @@ h2 {
 		</div>
 
 
-{% if user.is_superuser %}
+
 			<div>
 				<pre>
 It’s every human’s right to have children… unfortunately. <br><br>
@@ -218,7 +218,6 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 				<button type="submit" class="btn btn-default">Submit questionnaire!</button>
 			</form>
 		</div>
-		{% endif %}
 		{% endblock %}
 	  </div>
 
