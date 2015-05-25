@@ -255,7 +255,7 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 		if (mobileCheck()){
 			$(".desktop").remove();
 		} else {
-			$(".desktop").remove();
+			$(".mobile").remove();
 		}
 
 		$(".mobile-slider").change(function(event){
@@ -333,6 +333,17 @@ Please help us to stop breeding damaged children! Very un-damaged children can c
 			var fraction = 100 / total;
 			var score = 0;
 			$(".bs-slider").each(function(i, obj){
+				score = score + (obj.value * fraction);
+			});
+			score = Math.round( score * 10 ) / 10;
+			$("#totalscore").html(score);
+		});
+
+		$(".mobile-slider").change(function(){
+			var total = {{ questions|length }} * 10;
+			var fraction = 100 / total;
+			var score = 0;
+			$(".mobile-slider").each(function(i, obj){
 				score = score + (obj.value * fraction);
 			});
 			score = Math.round( score * 10 ) / 10;
