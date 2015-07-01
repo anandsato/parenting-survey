@@ -4,12 +4,124 @@
 		"selected_items":
 		[
 			[
-				"base",
-				"baseforms"
+				"mobie",
+				"mobile-slider"
+			],
+			[
+				"mobile",
+				"mobile-slider"
+			],
+			[
+				"mob",
+				"mobile-slider"
+			],
+			[
+				"mobil",
+				"mobileCheck"
+			],
+			[
+				"sub",
+				"submissions"
+			],
+			[
+				"all",
+				"all_results"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"ans",
+				"answers"
+			],
+			[
+				"total",
+				"total_score"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"score",
+				"scorebox"
 			],
 			[
 				"form",
-				"formlist"
+				"form-control"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"tota",
+				"total_score"
+			],
+			[
+				"to",
+				"totalscore"
+			],
+			[
+				"tot",
+				"totalscore"
+			],
+			[
+				"json",
+				"jsondata"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"link",
+				"link	Tag"
+			],
+			[
+				"S",
+				"STYLE	Tag"
+			],
+			[
+				"Question",
+				"QuestionAdmin"
+			],
+			[
+				"base",
+				"baseforms"
 			],
 			[
 				"del",
@@ -152,10 +264,6 @@
 				"deleteSub"
 			],
 			[
-				"marg",
-				"margin-left"
-			],
-			[
 				"refre",
 				"refreshPage"
 			],
@@ -178,10 +286,6 @@
 			[
 				"pro",
 				"promise"
-			],
-			[
-				"back",
-				"backwards"
 			],
 			[
 				"conte",
@@ -216,10 +320,6 @@
 				"undefined"
 			],
 			[
-				"all",
-				"allEntries"
-			],
-			[
 				"string",
 				"stringify"
 			],
@@ -234,10 +334,6 @@
 			[
 				"submtted",
 				"submittedEntryString"
-			],
-			[
-				"sub",
-				"submittedEntries"
 			],
 			[
 				"submitted",
@@ -388,10 +484,6 @@
 				"h1	Tag"
 			],
 			[
-				"S",
-				"SignUpAdmin"
-			],
-			[
 				"ban",
 				"background"
 			],
@@ -415,7 +507,89 @@
 			"file": "models.py",
 			"settings":
 			{
-				"buffer_size": 263,
+				"buffer_size": 460,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/surveys/settings.py",
+			"settings":
+			{
+				"buffer_size": 4533,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/surveys/urls.py",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/results.html",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix",
+				"name": "{% extends body_block %}"
+			}
+		},
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 1752,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/questions/models.py",
+			"settings":
+			{
+				"buffer_size": 516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/questions/admin.py",
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin.py",
+			"settings":
+			{
+				"buffer_size": 191,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<span class=\"slider\">\n      <span id=\"dyno-slider\" class=\"bar ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all\" aria-disabled=\"false\">\n        <span class=\"tick tick-1\"></span><span class=\"tick tick-2\"></span><span class=\"tick tick-3\"></span><span class=\"tick tick-4\"></span><span class=\"tick tick-5\"></span><span class=\"tick tick-6\"></span><span class=\"tick tick-7\"></span><span class=\"tick tick-8\"></span><span class=\"tick tick-9\"></span><span class=\"tick tick-10\"></span><span class=\"tick tick-11\"></span><span class=\"tick tick-12\"></span><span class=\"tick tick-13\"></span><span class=\"tick tick-14\"></span><span class=\"tick tick-15\"></span><span class=\"tick tick-16\"></span><span class=\"tick tick-17\"></span>\n      <div class=\"ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min\" style=\"width: 70%;\"></div><a class=\"ui-slider-handle ui-state-default ui-corner-all\" href=\"#\" style=\"left: 70%;\"></a></span>\n      <span class=\"total\">\n        <span id=\"dyno-count\" class=\"value\">105</span>\n      </span>\n    </span>",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Unix",
+				"name": "<span class=\"slider\">"
+			}
+		},
+		{
+			"file": "templates/base.html",
+			"settings":
+			{
+				"buffer_size": 14140,
 				"line_ending": "Unix"
 			}
 		}
@@ -452,6 +626,9 @@
 	},
 	"file_history":
 	[
+		"/Users/jonasbolin/python-virtualenvironments/surveys-env/src/submissions/templates/base.html",
+		"/Users/jonasbolin/python-virtualenvironments/surveys-env/src/static/static_files/css/bootstrap-slider.css",
+		"/Users/jonasbolin/python-virtualenvironments/surveys-env/src/submissions/templates/profile.html",
 		"/Users/jonasbolin/Dropbox/App Engine Development/fonstertitt/templates/test",
 		"/Users/jonasbolin/Development/vbk/www/index.html",
 		"/Users/jonasbolin/Development/vbk/www/js/app.js",
@@ -518,6 +695,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"id",
+			"210",
 			"requests",
 			"extend",
 			"SubmissionsHan",
@@ -594,7 +773,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -620,7 +799,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 98.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -630,15 +809,15 @@
 					"file": "models.py",
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								358,
+								358
 							]
 						],
 						"settings":
@@ -647,6 +826,272 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/surveys/settings.py",
+					"settings":
+					{
+						"buffer_size": 4533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1159,
+								1159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1474.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/surveys/urls.py",
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/results.html",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								683,
+								683
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{% extends body_block %}",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views.py",
+					"settings":
+					{
+						"buffer_size": 1752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								364,
+								364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 52.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/questions/models.py",
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/jonasbolin/python-virtualenvironments/surveys-env/src/questions/admin.py",
+					"settings":
+					{
+						"buffer_size": 181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "admin.py",
+					"settings":
+					{
+						"buffer_size": 191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<span class=\"slider\">",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "templates/base.html",
+					"settings":
+					{
+						"buffer_size": 14140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4672,
+								4672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2632.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -660,7 +1105,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
